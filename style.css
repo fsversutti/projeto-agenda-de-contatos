@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-table, .contacts-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 8px;
+}
+
+.contacts-table th, .contacts-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.contacts-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+button[type="button"], button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.color-label {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333333;
+    color: #f9f9f9;
+}
+
+.dark-mode .container {
+    background-color: #444444;
+}
+
+.dark-mode button[type="submit"],
+.dark-mode button[type="button"] {
+    background-color: #0066cc;
+}
+
+.dark-mode .contacts-table th {
+    background-color: #555555;
+    color: #f9f9f9;
+}
+
+#toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #555;
+}
